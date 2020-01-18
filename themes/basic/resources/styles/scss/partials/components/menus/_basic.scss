@@ -1,0 +1,66 @@
+.vnav {
+	
+    &.vnav-left {
+           
+        li {
+            padding: 0em 0em 0.6em 0em;//Heading Changes         
+            a, .link {
+                color:$color-secondary-d;
+            
+            }
+            
+             @include responsive-max( screen-tablet-large ) {
+                text-align: center;
+                a, .link {
+                     text-align: center;
+                }
+            }
+        }
+    }
+}
+//public footer nav
+.vnav {
+	display: block;
+
+	li {
+		display: inline-block;
+		width: 100%;
+
+		a, .link {
+			@include transit-color-bkg-color( $transit-eio, $transit-time-medium );
+			display: inline-block;
+			width: 100%;
+			padding:0.5em 0;
+		}
+	}
+}
+
+.event-small-menu{
+	
+	.vnav{
+
+		&.vnav-right {
+
+			li {
+				padding: 0.4em 0em;         
+				background-color: white;
+				&:after{
+/*					border:7px solid transparent;
+					border-bottom:8px solid white;
+					position:absolute;
+					content:"";
+					left:78%;
+					margin-left:-10;
+					bottom:100%;*/
+				  }
+
+				a, .link {
+					padding:0;
+					color:$color-black;
+					text-align: center;
+					font-size: 0.8em;
+				}
+			}
+		}
+	}
+}

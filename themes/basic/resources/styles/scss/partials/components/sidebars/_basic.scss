@@ -1,0 +1,140 @@
+.sidebar-main {
+	background-color: $color-primary-l;
+	color: $color-primary-text-l;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 225px;
+	border-right: 1px solid $color-border;
+	z-index: 10000000;
+
+	.collapsible-menu-wrap {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 225px;
+		margin-top: 100px;
+		margin-bottom: 30px;
+	}
+
+	.collapsible-menu-scroller {
+		width: 100%;
+		height: 100%;
+	}
+
+	.mCustomScrollBox, .mCSB_container {
+		overflow: visible !important;
+	}
+
+	&.sidebar-main-micro {
+		position: fixed;
+		z-index: 10;
+		width: 70px;
+
+		.collapsible-menu-wrap {
+			width: 70px;
+		}
+	}
+
+	@include responsive-max( screen-tablet-large ) {
+
+		.collapsible-menu-wrap {
+			margin-top: 85px;
+		}
+	}
+
+	@include responsive-max( screen-tablet-small ) {
+		position: absolute !important;
+		z-index: 100002 !important;
+		display: none;
+
+		.collapsible-menu-wrap {
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+	}
+}
+
+.btn-sidebar-main {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid $color-border;
+	background-color: $color-secondary;
+	color: $color-secondary-text;
+	cursor: pointer;
+	z-index: 1;
+	@include transit-color( $transit-eio, $transit-time-small );
+
+	&:hover {
+		color: $color-btn;
+	}
+
+	.icon {
+		padding: 0 0.5em;
+	}
+
+	.sidebar-trigger-collapsed {
+		display: none;
+	}
+}
+
+#btn-sidebar-close {
+	top: 0;
+}
+
+.profile-bar {
+	
+	@include responsive-max( screen-tablet-small ) { 
+				
+		z-index: 90020 !important;
+		position: relative;
+	}
+		
+	.sidebar-main {
+		width: 380px;
+		margin-top: 115px;
+		@include transit-width( $transit-eio, $transit-time-large );
+			
+			@include responsive-max( screen-tablet-large ) {
+					@include transit-width( $transit-eio, $transit-time-large );
+					width: 50px;
+					
+			}
+			
+			@include responsive-max( screen-tablet-large ) { 
+				margin-top:70px;
+				position: fixed !important;
+			}
+			
+		.collapsible-menu-wrap {
+			position:absolute;	
+			top:125px;
+			left: 40px;
+			@include transit-width( $transit-eio, $transit-time-large);
+				
+				@include responsive-max( screen-tablet-large ) {
+				position: relative;
+				width: 50px;	
+				margin-top: 7px;
+				left:0;
+				top:0;
+			}
+		}
+		
+		@include responsive-max( screen-tablet-large ) {
+			display:block;
+			//z-index: 50 !important;
+		}
+	}
+	
+}
+
+
+.face {
+		font-size: 200px;
+	}

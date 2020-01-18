@@ -1,0 +1,175 @@
+.popout-group-main {
+	text-align: right;
+
+	.popout-actions {
+		display: inline-block;
+
+		.popout-trigger {
+			position: relative;
+			display: inline-block;
+			width: 70px;
+			height: 60px;
+			padding: 8px 5px;
+			line-height: 40px;
+			cursor: pointer;
+			position: relative;
+			text-align: center;
+			margin-left: 5px;
+			@include transit-all( $transit-eio, $transit-time-small );
+			&:hover {
+				border:2px solid $color-btn;
+			}
+		}
+
+		.wrap-user {
+
+			.icon {
+				padding: 0.75em;
+				@include circled1( $color-secondary, $color-secondary-text );
+			}
+
+			.user-avatar {
+				height: 2em;
+				@include shadow-inset( 0, 0, 0, $color-shadow-inset, 2px );
+			}
+		}
+	}
+
+	.popouts {
+		position: relative;
+		width: 100%;
+		border-radius: 5px;
+		.popout {
+			position: absolute;
+			width: 350px;
+
+			.popout-content-wrap {
+				background-color: $color-white;
+				color: $color-primary-text;
+				box-shadow: 4px 4px 4px gray;
+
+				
+			}
+		}
+
+		#popout-user {
+			right: -2px;
+			width: 280px;
+			.popout-content {
+				li {
+					
+					span, a {
+						display: inline-block;
+						width: 100%;
+						@include transit-all( $transit-eio, $transit-time-small );
+
+						&:hover {
+							background-color: unset;
+							border-bottom: none;
+						}
+					}
+				}
+			}
+		}
+
+		#popout-announcement {
+			right: 69px;
+		}
+
+		#popout-activity {
+			right: 68px;
+			text-align: left;
+				.popout-content-wrap {
+
+					.popout-content {
+
+						li {
+							padding:0 0.8em;
+							border-bottom: 2px solid $color-secondary;
+						span, a {
+
+						}
+					}
+				}
+			}
+		}
+
+		#popout-reminder {
+			right: 157px;
+			text-align: left;
+				.popout-content-wrap {
+
+					.popout-content {
+
+						li {
+							padding:0 0.8em;
+							border-bottom: 2px solid $color-secondary;
+						span, a {
+
+						}
+					}
+				}
+			}
+		}
+
+		#popout-notification {
+			right: 235px;
+			text-align: left;
+				.popout-content-wrap {
+					
+					.popout-content {
+
+						li {
+							padding:0 0.8em;
+							border-bottom: 2px solid $color-secondary;
+						span, a {
+
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@include responsive-max( screen-tablet-large ) {
+
+		.popout-actions {
+
+			.popout-trigger {
+				height: 40px;
+				padding: 5px;
+				line-height: 30px;
+			}
+		}
+
+		.popouts {
+
+			.popout {
+				width: 220px;
+			}
+		}
+	}
+
+	@include responsive-max( screen-tablet-small ) {
+
+		.popout-actions {
+			width: 100%;
+			border-bottom: 1px solid $color-border;
+
+			.popout-trigger {
+				width: 20%;
+			}
+		}
+
+		.popouts {
+
+			.popout {
+				width: 100%;
+			}
+
+			#popout-activity, #popout-reminder, #popout-notification, #popout-announcement {
+				right: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.tooltip {
+  position:absolute;
+  background-color:$color-link;
+  @include circled2(36px,36px, $color-blue );
+  text-align: center;
+}
+
+.tooltip .tooltiptext {
+  opacity: 0;
+  margin-left: 50px;
+  margin-top:-42px;
+  width: 320px;
+  background-color: gray;
+  color: #fff;
+  border-radius: 2px;
+
+  padding:1em 0em;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+  @include transit-all( $transit-eio, $transit-time-medium );
+}

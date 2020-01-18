@@ -1,0 +1,133 @@
+.grid-data-default {
+	padding :0;
+	.avatar {
+
+		img {
+			width: 48px;
+			border: 2px solid $color-border-d;
+		}
+	}
+	
+	.cmt-select-wrap {
+			width: 13em !important;
+			margin-right: 4px;
+			@include rounded( 0 );
+			@include shadow-inset( 0, 0, 0, $color-secondary-l, $spread: 0px );
+			
+			&:focus {
+				@include shadow-inset( 0, 0, 0, $color-field, $spread: 1px );
+			}
+				
+	}
+	// Grid Search
+	.grid-search-wrap {
+
+		.grid-search {
+
+			.search-field {
+				
+				.btn {
+					padding: 13px;
+				}
+				border: 1px solid $color-border-d;
+
+				input[type=text], .cmt-select-wrap {
+					width: 10em !important;
+					margin-right: 4px;
+					@include rounded( 0 );
+					@include shadow-inset( 0, 0, 0, $color-secondary-l, $spread: 0px );
+
+					&:focus {
+						@include shadow-inset( 0, 0, 0, $color-field, $spread: 1px );
+					}
+				}
+
+				input[type=text] {
+					@include rounded-left( $size-small );
+				}
+
+				.cmt-select-wrap {					
+
+					.cmt-select {
+						@include rounded( 0 );
+
+						.cmt-selected {
+							@include rounded( 0 );
+						}
+
+						.cmt-selected, .cmt-select-list {
+							@include shadow-inset( 0, 0, 0, $color-secondary-l, $spread: 0px );
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.grid-head-wrap {
+		border-bottom: none;
+		padding: 0px !important;
+		.grid-head-options {
+			
+			display: none;
+		}
+	}
+
+	.grid-report-wrap {
+
+		.grid-report {
+
+			.grid-report-fields {
+
+				.field-title {
+					line-height: 2.4em;
+				}
+			}
+		}
+	}
+	.grid-options-wrap{
+		
+		padding: 0;
+	}
+	.grid-content-wrap {
+		margin-top:1em;
+		
+		.grid-content {
+		
+			.grid-rows-wrap {
+				
+				.grid-rows{
+					
+					.grid-row{
+						
+						.grid-row-data{
+							padding: 0.4em 0.8em 0.8em 0.8em;
+						}
+						&:hover{
+							background-color: $color-primary;
+							@include transit-bkg( $transit-eio, $transit-time-medium );
+						}
+					}
+					
+				}
+			}
+			.grid-rows-header{
+				padding: 0 0.8em;
+			}
+		}
+	}
+	
+	.actions{
+		.action{
+			padding-right: 1.2em;
+		}
+	}
+	
+	.grid-footer-wrap{
+		.grid-footer{
+			padding:0;
+		}
+	}
+}
+
+

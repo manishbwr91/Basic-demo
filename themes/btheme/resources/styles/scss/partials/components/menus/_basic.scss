@@ -1,0 +1,36 @@
+.vnav {
+	
+    &.vnav-left {
+           
+        li {
+            padding: 0em 0em 0.6em 1em;//Heading Changes         
+            a, .link {
+                color:$color-secondary-d;
+                padding: 0.3em 0em 0.4em 0.2em;  
+            }
+            
+             @include responsive-max( screen-tablet-large ) {
+                text-align: center;
+                a, .link {
+                     text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.vnav {
+	display: block;
+
+	li {
+		display: inline-block;
+		width: 100%;
+
+		a, .link {
+			@include transit-color-bkg-color( $transit-eio, $transit-time-medium );
+			display: inline-block;
+			width: 100%;
+			padding:0.5em 5em 0.5em 0.5em;
+		}
+	}
+}

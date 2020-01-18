@@ -1,0 +1,40 @@
+.menu-social {
+	
+	
+	
+	.icon{
+		border-radius: 100%;
+	}
+
+    .icon-border, .cmti-border {
+		
+		
+            
+            &.icon-facebook, &.cmti-social-facebook {
+                 color: $color-facebook;
+            }
+
+            &.icon-twitter, &.cmti-social-twitter {
+                    color:$color-twitter;
+            }
+            
+            &.icon-google, &.cmti-social-google {
+                    color:$color-google;
+            }
+
+        &:hover {
+            
+            &.icon-facebook, &.cmti-social-facebook {
+                 color: $color-white;
+            }
+
+            &.icon-twitter, &.cmti-social-twitter {
+                    color:$color-white;
+            }
+            
+            &.icon-google, &.cmti-social-google {
+                    color:$color-white;
+            }
+        }
+    }
+}

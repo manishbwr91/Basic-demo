@@ -1,0 +1,75 @@
+.tabs-basic {
+
+	.tab-links-wrap {
+		
+		.tab-link {
+			margin-left: 0px;
+			background-color: $color-secondary;
+			margin-right:5px;
+			color:black;
+			@include rounded-top(5px);
+				&.active {
+				border-bottom: none;
+				margin-bottom:-1px;
+				background-color: $color-white;
+				color:$color-link;
+				@include transit-bkg-color( $transit-eio, $transit-time-medium);//changes
+			}
+		}
+	}
+	.tab-content-wrap {
+                
+		.tab-content{
+			border: 1px solid $color-border-d;
+			border-top: none;
+        }
+	}
+}
+//Changes Tab Vertical Code
+.tabs-vertical {
+	
+	.tab-links-wrap {
+			float: left;
+			border: 1px solid $color-border-d;
+			border-right: none;
+			background-color: $color-secondary;
+			width: 30%;
+			height: 300px;
+			
+		.tab-link {
+			display:inline-block;
+			background-color: $color-secondary;
+			padding: 1.2em;
+			float: left;
+			cursor: pointer;
+			width: -moz-available;
+			text-align: center;
+			border-bottom: 2px solid $color-white;
+			color:black;           
+			
+		&.active {
+				margin-bottom:-1px;
+				background-color: $color-white;
+				color:$color-link;
+				@include transit-bkg( $transit-eio, $transit-time-medium);//changes	
+					
+			}
+		}
+	}
+	
+	.tab-content-wrap {
+		float: left;
+		padding: 0px 0px 0px 0px;
+		border: 1px solid #ccc;
+		width: 70%;
+		border-left: none;
+		height:300px;
+		background-color:$color-white;
+		text-align: center;	
+			
+		.tab-vertical-content {
+			display:none;
+		}
+	}
+}
+

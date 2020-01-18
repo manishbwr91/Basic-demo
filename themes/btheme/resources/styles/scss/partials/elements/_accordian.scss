@@ -1,0 +1,26 @@
+.accordian-basic {
+
+	.accordian-trigger {
+		background-color:white;
+		color: $color-link;
+		padding: 0.50em 1em;
+		border: 2px solid $color-border;
+		cursor:pointer;
+			&.active {
+			background-color:$color-border;
+			color: $color-primary-d;
+				.iconarrow{
+					position: absolute;
+					top:0   px;
+					left: 150px;
+		}
+	}
+}
+
+	.accordian-view {
+		color: $color-secondary-text;
+		border: 2px solid $color-border; 
+		padding:0.7em 0.7em;
+	}
+}
+

@@ -1,0 +1,52 @@
+.card-basic {
+	
+	height: 290px;
+	
+	@include transit-all( $transit-eio, $transit-time-large );
+	background: $color-primary;
+	margin:1rem;
+	.card-content-wrap {
+		
+
+		.card-header {
+			padding:1;
+		}
+	}
+
+	.card-content{
+		
+		.card-content-summary {
+			line-height: 22px;
+		}
+	}
+
+	.card-footer {
+
+		.card-info {
+			padding-bottom: 1rem;
+		}
+	}
+
+	&:hover{
+		@include rounded( $size-small );
+		@include shadow( $size-default, $size-default, $size-medium, rgba( $color-black, $color-transparent-medium ) );
+	}
+}
+
+.card-address-2 {
+	
+	display: none;
+}
+
+
+.cmt-select-wrap {
+	
+	.cmt-select {
+		
+		.dd {
+
+			z-index: 9 !important;
+		}
+		
+	}
+}

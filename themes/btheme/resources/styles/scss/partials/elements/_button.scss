@@ -1,0 +1,72 @@
+// == Button ========================
+
+.btn {
+
+	&.btn-tags {
+	background-color: $color-white;
+	color: $color-link;
+	width: 85px;
+	@include rounded(20px);
+	border: 2px solid $color-link;
+		 &:hover {
+			background-color: $color-link;
+			color: $color-white;
+		}
+		&.tags-big {
+			margin-top:10px;
+			width: 140px; 
+		}
+	}
+}
+//Counter All css Here
+.counter {
+	display:inline;
+	float:left;
+	&.counter-btn-left {
+	background-color: $color-white;
+	color: $color-blue;
+	width:40px;
+	height:35px;
+	box-shadow: 0px 0px 1px black;
+	@include rounded-left(5px);
+	&:hover {
+			background-color: $color-blue-d;
+			color: $color-white;
+   }
+}
+
+&.counter-input {
+   text-align:center;
+   width:40px;
+   height:35px;
+   box-shadow: 0px 0px 1px black;
+   background-color: $color-white;
+   padding: 0;
+
+}
+
+ &.counter-btn-right {
+	background-color : $color-white;
+	color : $color-blue;
+	width:40px;
+	height:35px;
+	box-shadow : 0px 0px 1px black;
+	@include rounded-right(5px);
+	&:hover  {
+		background-color: $color-blue-d;
+		color: $color-white;
+		}
+	}
+}
+	
+.plus.disabled, 
+.minus.disabled {
+	color:$color-white !important;
+	background-color:$color-btn-d !important;
+		&:hover  {
+		background-color: unset;
+		color:$color-white !important;
+		}
+}
+
+	

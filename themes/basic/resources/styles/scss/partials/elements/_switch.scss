@@ -1,0 +1,52 @@
+
+.cmt-switch {
+	 
+	.cmt-toggle-round + label {
+		width: 52px !important;
+		height:1px;
+		background-color:$color-primary-l;
+        }
+    
+	.cmt-toggle-round + label:before,
+	.cmt-toggle-round + label:after {
+	  display: inline-block;
+	  position: absolute;
+	  left: 1px;
+	  content: "";
+      height: 10px;
+      }
+    
+	.cmt-toggle-round + label:before { 
+		right: 1px;
+		background-color: $color-secondary;
+		border-radius:80px;
+		@include transit-bkg-color( $transit-eio, $transit-time-medium );
+		height: 20px;
+		position:absolute;
+		top:0px;
+					
+        }
+        
+	.cmt-toggle-round + label:after {
+		width: 20px;
+        height: 20px;
+		background-color: $color-white;
+		border-radius:50px;
+		box-shadow: 0px 0px 4px $color-black;
+		@include transit-margin( $transit-eio, $transit-time-medium );
+                position:absolute;
+                top:0;
+        }
+
+	.cmt-toggle-round:checked + label:before {
+		background-color: $color-blue;
+	}
+        //changes
+	.cmt-toggle-round:checked + label:after {
+		margin-left:2em;           
+    }    
+}
+.cmt-switch .cmt-toggle-round + label:hover::before{
+		background-color: $color-tertiary;
+		opacity: 0.6;
+}

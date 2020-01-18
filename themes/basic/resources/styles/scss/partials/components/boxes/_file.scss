@@ -1,0 +1,82 @@
+.box-file-uploader {
+	
+}
+.card-file-dragger{
+	.card-data{
+		.drag-wrap{
+			.drag{
+				background-color: $color-white;
+			}
+		}
+	}
+}
+
+
+.sidebar-uploader{
+	
+	.box-file-uploader	{
+		
+		.uploader-actions {
+			position:absolute;
+			top:10px;
+			right:10px;
+
+			.uploader-action {
+				
+			}
+		}
+	}
+	
+	.box-content {
+		background-color: $color-secondary;
+		height: 210px;
+		.box-content-data{
+			.form-wrap {
+
+				.post-action {
+					text-align: center;
+				}
+
+				.file-info, .file-fields {
+					position: relative;
+					margin-top:10px;
+				}
+			}
+		}
+	}
+	@include responsive-max( screen-tablet-large ) {
+		display: none;
+	}
+}
+.event-file-uploader{
+	
+	.box-file-uploader-direct {
+		border: 2px solid $color-border; //changes
+		.btn-chooser {
+			display: none;
+		}
+
+		.box-content {
+			padding-bottom:0.9em;
+			.box-content-data {
+				background-color: $color-white;
+				.file-wrap {
+					display: none;
+				}
+
+				.chooser-wrap {
+					display: block;
+				}
+			}
+		}
+	}
+}
+.profile-uploader-card{
+	
+	.card-file {
+		position:absolute;
+		left:0;
+		right:0;
+		top:36px;
+	}	
+}

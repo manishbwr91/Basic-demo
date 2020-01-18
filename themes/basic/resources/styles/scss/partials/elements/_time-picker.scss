@@ -1,0 +1,53 @@
+.cmt-timepicker-basic {
+	
+	background-color: $color-white;//changes
+	.cmt-timepicker-header {
+		background-color: $color-primary;
+			&.active {
+				box-shadow: inset 0px 0px 5px $color-btn;//changes	
+				color: $color-secondary-d;
+				@include transit-all( $transit-eio, $transit-time-large );//changes
+			}
+		}
+	
+	.cmt-timepicker-content {
+	
+		.cmt-timepicker-hr-wrap {
+
+			.cmt-timepicker-hr {
+				&.active {
+				box-shadow: inset 0px 0px 5px $color-btn;//changes	
+				color: $color-secondary-d;
+				@include transit-all( $transit-eio, $transit-time-large );//changes
+				}
+			}
+		}
+
+		.cmt-timepicker-min-wrap {
+
+			.cmt-timepicker-min {
+				&.active {
+					box-shadow: inset 0px 0px 5px $color-btn;//changes	
+					color: $color-secondary-d;
+					@include transit-all( $transit-eio, $transit-time-large );//changes
+				}
+			}
+		}
+	}
+
+	.cmt-timepicker-footer {
+		background-color: $color-primary; //changes
+		border: 1px solid $color-border-d;//changes
+		
+		.cmt-timepicker-ok {
+			margin-left:0.60em;//changes
+			margin-top:0.25em;//changes
+		}
+
+		.cmt-timepicker-close {
+			margin-left: 0.60em;//changes
+			margin-top:0.25em;//changes
+		
+		}
+	}
+}

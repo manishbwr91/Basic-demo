@@ -1,0 +1,18 @@
+.popup-basic {
+	.popup-data {
+		background-color:unset;
+		.popup-close{
+			top:0;
+		}
+	}
+}
+
+.popup-corner{
+    position: absolute;
+	right:0;
+    border-radius: 20px;
+}
+
+.popup-corner-close{
+    padding: 6px;
+}

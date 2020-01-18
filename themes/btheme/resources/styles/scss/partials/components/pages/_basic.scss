@@ -1,0 +1,87 @@
+.page-authentication-forms {
+		
+	.page-content-wrap {
+		position: relative;
+		z-index: 15;
+		height:100%;
+		
+		.page-header-wrap {
+			
+			.page-header {
+			
+				.page-header-icon {
+					padding: 2em 2em 2em 1.1em;
+				}
+			}
+		}
+		
+		@include responsive-max( screen-desktop-large ) {
+			#small-icon{
+				max-width:52%;
+				padding: 2em 2em 2em 0.1em;
+			}
+		}
+		
+		.page-content {
+			
+			.page-content-title {
+				color:white;
+				padding: 1rem 0;
+			}
+			
+			@include responsive-max( screen-tablet-large ) {
+				#small-title{
+					font-size: 1.2em;
+				}
+			}
+		}
+
+		.page-footer-wrap {
+			border-top: 2px solid white;
+			margin-left: 4%;
+			margin-right: 4%;
+			
+			@include responsive-max( screen-tablet-large ) {
+				
+				position: relative !important;
+			}
+			
+			.page-footer {
+
+				.page-footer-info {
+					
+					.nav {
+						
+						li {
+							padding-right: 2em;
+							padding-top: 0.4em;
+							
+							a {
+								color:$color-white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#privacy-policy {
+	
+	.page-basic{
+		
+		.page-content-wrap{
+			
+			.page-content{
+				
+				.page-content-title{
+					text-align: center;
+					font-size: 1.8em;
+					padding: 1.3em 0em 0em 0em;
+				}
+				
+			}
+		}
+	}
+}

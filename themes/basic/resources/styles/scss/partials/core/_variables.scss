@@ -1,0 +1,78 @@
+$font-default: opensans, Helvetica, sans-serif; // Default Font -> typography -> body
+$font-heading: opensans-bold, Geneva, sans-serif; // Font for Headers -> typography -> h1, h2, h3, h4, h5, h6, .heading
+
+// Primary Color:
+$color-primary: #F4F6F8;
+$color-primary-l: #FFFFFF;
+$color-primary-d: #495666;
+
+// Primary Text Color:
+$color-primary-text:  #495666;
+$color-primary-text-l: #495666;
+$color-primary-text-d: #FFFFFF;
+
+// Secondary Color:
+$color-secondary: #E6E9EF;
+$color-secondary-l: #FFFFFF;
+$color-secondary-d: #495666;
+
+// Secondary Text Color:
+$color-secondary-text: #495666;
+$color-secondary-text-l: #A5A5A5;
+$color-secondary-text-d: #FFFFFF;
+
+// Tertiary Color:
+$color-tertiary: #4C7EBB;
+$color-tertiary-l: #FFFFFF; 
+$color-tertiary-d: #3971A8;
+
+// Tertiary Text Color:
+$color-tertiary-text: #FFFFFF; 
+$color-tertiary-text-l: #4C7EBB;
+$color-tertiary-text-d: #FFFFFF; 
+
+
+// Form Fields Color - input, textarea, select
+$color-field: #FFFFFF;
+$color-field-text: #495666;
+$color-field-h: #FFFFFF;      // Field Hover
+$color-field-text-h: #495666;
+$color-field-f: #FFFFFF;      // Focused Field
+$color-field-text-f: #495666;
+$color-field-d: #CCCCCC;      // Disabled Field
+$color-field-text-d: #909090;
+$color-placeholder: #D1D2D3;  // Placeholder
+
+$color-shadow-inset: #EAEAEA; // Inset color for fields
+$color-shadow-inset-h: #CCCCCC; // Inset color for field hover
+$color-shadow-inset-f: #4C7EBB; // Inset color for field focus
+$color-shadow-inset-d: #EAEAEA; // Inset color for disabled field
+
+// Buttons
+$color-btn: #4C7EBB;
+$color-btn-text: #FFFFFF;
+$color-btn-h: #4C7EBB;    // Button Hover
+$color-btn-text-h: #FFFFFF;
+$color-btn-a: #3972A8;    // Active Button
+$color-btn-text-a: #FFFFFF;
+$color-btn-d: #808080;       // Disabled Button
+$color-btn-text-d: #363636;
+
+//Borders
+$color-border: #EAEAEA; // Default border color
+$color-border-l: #F4F4F4; // Light border color
+$color-border-d: #D1D2D3; // Dark border color
+
+
+// Additional Colors
+$color-header: #363636;
+$color-header-text: #495666;
+$color-footer: #ffffff;
+$color-footer-text: #495666;
+
+$color-link: #4C7EBB;
+
+$color-black: #000000;
+
+
+

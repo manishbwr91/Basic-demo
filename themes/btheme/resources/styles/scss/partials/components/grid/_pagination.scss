@@ -1,0 +1,18 @@
+.pagination-basic {
+
+	li, .page-link {
+		border-radius: 10px;
+		span, a {
+			padding:0.6em;//changes
+			&:hover {
+				color: $color-btn-text-h;
+				cursor: pointer;
+			}
+			
+			.icon {
+				padding-top: 0.2em;
+			}
+		}
+	}
+}
+

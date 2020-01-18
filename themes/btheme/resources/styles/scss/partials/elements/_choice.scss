@@ -1,0 +1,10 @@
+.cmt-choice {
+	
+	input[type=checkbox],
+	input[type=radio] {
+		display: none; //changes
+		}
+	input[type=checkbox]:checked + .label::before {
+		content: "\2f"; //changes
+	}
+}

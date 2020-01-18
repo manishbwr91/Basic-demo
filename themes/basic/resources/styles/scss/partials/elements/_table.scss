@@ -1,0 +1,26 @@
+.table {
+		
+	th {
+		padding: 0.5em 0em 0.8em 1em;
+		border-bottom:  1px solid $color-secondary;
+		text-align: left;
+	}
+
+	td {
+		padding: 0.5em 4em 2.2em 1em;
+		border-bottom:  1px solid $color-secondary;
+		text-align: left;
+		line-height: 24px;
+	}
+	
+	&.table-hover {
+		> tbody {
+			tr:hover {
+				background-color: $color-primary;
+				color: $color-secondary-text;
+				@include transit-bkg( $transit-eio, $transit-time-medium );
+			}
+		}
+	}
+}
+

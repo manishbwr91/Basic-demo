@@ -1,0 +1,192 @@
+.fx-slider-regular {
+	
+	.control {
+		background-image: none;
+	}
+}
+
+#slider-main, #slider-offer {
+
+	.fx-slider-regular {
+
+		.slide {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.slides-wrap {
+
+			.slide {
+
+				.wrap-slide-content {
+
+					.slide-content {
+						display: none;
+					}
+				}
+			}
+		}
+
+		.control {
+
+			&.control-left {
+				left: 5%;
+				background: none;
+			}
+
+			&.control-right {
+				right: 5%;
+				background: none;
+			}
+		}
+
+		.bullets {
+
+			.bullet {
+				background: transparent;
+			}
+		}
+	}
+}
+
+#slider-offer {
+
+	.fx-slider-regular {
+
+		.bullets {
+			bottom: 20px;
+
+			.bullet {
+				width: 12px;
+				height: 12px;
+				background-image: url( '../images/century/icons/bullets.png' );
+				background-position: -12px 0px;
+				
+				&.active {
+					background-position: 0px 0px;
+				}
+			}
+		}
+	}
+}
+
+#sidebar-featured-projects {
+
+	.fx-slider-regular {
+
+		.control.control-left, .control.control-right {
+			width: 3%;
+			height: 40px;
+			text-align: center;
+			z-index: 100;
+
+			i {
+				font-size: $font-size-1;
+				color: $color-transparent-white-h;
+				opacity: 0.5;
+
+				&:hover i {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+#fx-slider-project, #fx-slider-team {
+
+	.fx-slider-regular {
+
+		.slide {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	.control {
+		position: absolute;
+		top: 1em;
+		width: auto;
+		height: auto;
+		color: $color-gray-d;
+
+		&.control-left {
+			right: 3em;
+			left: auto;
+			background: none;
+		}
+
+		&.control-right {
+			right: 1em;
+			background: none;
+		}
+	}
+}
+
+.project-slider {
+	
+	.slides-wrap {
+		
+		.slide {
+			
+			.project-bkg {
+				width: 100%;
+			}
+		}
+	}
+}
+
+
+
+
+// Temporary for demo
+
+#slider-main, #slider-offer {
+
+	.fx-slider-regular {
+
+		.slide {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.slides-wrap {
+
+			.slide {
+
+				.wrap-slide-content {
+
+					.slide-content {
+						display: block;
+						height: auto;
+						padding: 0 10%;
+						width: 100%;
+						@include valign-center;
+
+						.fxs-header {
+							position: relative;
+							text-align: center;
+						}
+
+						.fxs-content {
+							background: none;
+							text-align: center;
+							padding: 0;
+							width: 100%;
+							font-size: 1em;
+						}
+					}
+
+					.fxs-logo {
+						position: absolute;
+						top: 10px;
+						right: 10px;
+					}
+				}
+			}
+		}
+	}
+}

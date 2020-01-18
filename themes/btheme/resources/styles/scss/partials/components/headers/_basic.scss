@@ -1,0 +1,187 @@
+.header-basic {
+	@include transit-width-height( $transit-eio, $transit-time-small );
+	background-color: $color-white;
+	
+	.header-logo {
+		position: absolute;
+		padding:1em 0em 0em 0em;
+
+		.logo-mobile {
+			display: none;
+		}
+		
+		.logo {
+
+			img {
+				@include transit-all( $transit-eio, $transit-time-small );
+			}
+		}
+	}
+	
+	@include responsive-min( screen-tablet-large ) {
+			padding:0 2%;
+	}
+		
+	@include responsive-min( screen-tablet-large ) {
+		#menu-main {
+			padding: 0;
+			height: 80px;
+			line-height: 80px;
+			
+			li {
+				margin-left: 15px;
+				@include transit-all( $transit-eio, $transit-time-small );
+
+				a {
+					padding: 0 1em;
+					color: $color-header-text;
+					font-weight: bold;
+				}
+
+				&:hover, &.active {
+					height: 80px;
+					color: $color-header-text;
+					border-bottom: 4px solid $color-link;
+				}
+			}
+			
+			li,a{
+					
+					&.header-icon:hover{
+						border-bottom: unset;
+					}
+				}
+			}
+
+		&.header-small {
+
+			#menu-main {
+				padding: 0;
+				height: 50px;
+				line-height: 50px;
+
+				li {
+
+					&:hover, &.active {
+						height: 50px;
+					}
+				}
+			}
+		}
+               
+		.header-logo{
+
+			.logo{
+
+				img{
+				   height:50px;
+				}
+			}
+		}
+	}
+	
+	@include responsive-max( screen-tablet-large ) {
+		
+		#menu-main-mobile {
+			box-shadow: 0 4px 4px -0px $color-gray-l;
+
+			li{
+				box-shadow: unset;
+				
+				a{
+					font-weight: bold;
+					padding:1.5em;
+					text-align: left;
+
+					&:hover, &.active {
+						background-color:white;
+						color:$color-link
+					}  
+				}
+			}
+		}
+		
+		#mobile-actions {
+
+			.mobile-action {
+				font-size: 18px;
+				padding-left: 0.3em;
+			}
+		}
+		
+		.header-logo {
+			margin: 3px 0px 0px 8px ;
+			left:-2px;
+
+			.logo-desktop {
+				display:none ;
+			}
+
+			.logo-mobile {
+				display: block;
+			}
+			
+			.logo {
+
+				img {
+					
+					height:34px;
+					@include transit-all( $transit-eio, $transit-time-small );
+				}
+			}
+		}
+		
+		.header-icon {
+			display: none;
+		}
+	}       
+}
+
+.landing-page-header{
+	
+	.header-basic {
+		background-color: unset;
+		
+			@include responsive-min( screen-tablet-large ) {
+			#menu-main {
+				
+				li {
+					
+					a {
+						color: $color-white;
+					}
+
+					&:hover, &.active {
+						border-bottom: 4px solid $color-white;
+					}
+				}
+				
+				li,a{
+					
+					&.header-icon:hover{
+						border-bottom: unset;
+					}
+				}
+			}
+
+			.header-logo{
+
+				.logo{
+
+					img{
+					   height:44px;
+					}
+				}
+			}
+		}
+
+		@include responsive-max( screen-tablet-large ) {
+			.header-logo {
+				
+				.logo-mobile {
+					padding:0.3em;
+				}
+			}
+		}       
+	}
+}

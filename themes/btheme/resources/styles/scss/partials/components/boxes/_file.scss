@@ -1,0 +1,64 @@
+.box-file-uploader {
+	
+}
+.card-file-dragger{
+	.card-data{
+		.drag-wrap{
+			.drag{
+				background-color: $color-white;
+			}
+		}
+	}
+}
+
+.sidebar-uploader{
+	
+	.box-file-uploader-direct {
+
+			@include responsive-max( screen-tablet-large ) {
+				display: none;
+			}
+
+		.btn-chooser {
+
+			}
+
+		.box-content {
+			background-color: $color-secondary;
+			height: 230px;
+			.box-content-data {
+
+				.file-wrap {
+
+				}
+
+				.chooser-wrap {
+
+				}
+			}
+		}
+	}
+}
+.event-file-uploader{
+	
+	.box-file-uploader-direct {
+		border: 2px solid $color-border; //changes
+		.btn-chooser {
+			display: none;
+		}
+
+		.box-content {
+			padding-bottom:0.9em;
+			.box-content-data {
+				background-color: $color-white;
+				.file-wrap {
+					display: none;
+				}
+
+				.chooser-wrap {
+					display: block;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.card-basic {
+	@include transit-all( $transit-eio, $transit-time-large );
+	
+	.card-content-wrap {
+		background: $color-primary;
+		
+		.card-header {
+			padding:0;
+		}
+	}
+	
+	.card-content{
+		
+		.card-content-summary {
+			line-height: 22px;
+		}
+	}
+	
+	.card-footer {
+		
+		.card-info {
+			padding-bottom: 1rem;
+		}
+	}
+	
+	&:hover{
+		box-shadow: 5px 5px 5px -3px gray; 
+	}
+}
